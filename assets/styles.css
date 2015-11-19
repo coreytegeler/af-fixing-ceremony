@@ -1,0 +1,110 @@
+/* line 1, styles.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0; }
+
+/* line 6, styles.scss */
+.horz, body#start section.cyberspace .inner, body#four-movements section.menu .inner, body#four-movements section.menu .inner .vert .wrapper, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper {
+  display: table;
+  margin: auto; }
+
+/* line 10, styles.scss */
+.vert, body#start section.cyberspace .inner .wrapper {
+  display: table-cell;
+  vertical-align: middle; }
+
+/* line 14, styles.scss */
+section {
+  width: 100%;
+  height: 100%; }
+
+/* line 18, styles.scss */
+.return {
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  left: 20px;
+  bottom: 20px;
+  background-image: url(/assets/images/plus.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+/* line 31, styles.scss */
+body#start section.cyberspace .inner {
+  width: 90%;
+  height: 100%; }
+  /* line 35, styles.scss */
+  body#start section.cyberspace .inner .wrapper {
+    width: 100%;
+    height: auto; }
+    /* line 39, styles.scss */
+    body#start section.cyberspace .inner .wrapper img.text {
+      cursor: pointer;
+      width: 100%; }
+
+/* line 49, styles.scss */
+body#four-movements section.menu {
+  position: relative;
+  height: calc(100% - 120px);
+  padding: 60px 0; }
+  /* line 53, styles.scss */
+  body#four-movements section.menu .title {
+    position: absolute;
+    width: auto;
+    height: 40px;
+    top: 20px;
+    left: 20px; }
+  /* line 60, styles.scss */
+  body#four-movements section.menu .inner {
+    width: 40%;
+    height: 100%; }
+    /* line 64, styles.scss */
+    body#four-movements section.menu .inner .vert, body#four-movements section.menu body#start section.cyberspace .inner .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper {
+      width: 100%;
+      height: auto; }
+      /* line 67, styles.scss */
+      body#four-movements section.menu .inner .vert .wrapper, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper {
+        display: table;
+        position: relative; }
+        /* line 71, styles.scss */
+        body#four-movements section.menu .inner .vert .wrapper img.positive, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper img.positive, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper img.positive {
+          width: 100%; }
+        /* line 74, styles.scss */
+        body#four-movements section.menu .inner .vert .wrapper .menu-item, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item {
+          position: absolute;
+          display: none; }
+          /* line 77, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.show, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.show, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.show {
+            display: table; }
+          /* line 80, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item img, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item img, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item img {
+            width: auto;
+            height: 30px; }
+          /* line 84, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.i, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.i, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.i {
+            bottom: calc(100% + 10px);
+            left: calc(50% - 55px); }
+          /* line 88, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.ii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.ii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.ii {
+            top: calc(50% - 30px);
+            left: calc(100% + 10px); }
+          /* line 92, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.iii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iii {
+            top: calc(100% + 10px);
+            left: calc(50% - 65px); }
+          /* line 96, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.iv, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iv, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iv {
+            top: calc(50% - 15px);
+            right: calc(100% + 10px); }
+
+/* line 107, styles.scss */
+body.movement#i {
+  background: black;
+  overflow: hidden; }
+
+/* line 116, styles.scss */
+body.movement#iii {
+  background: black;
+  overflow: hidden; }
