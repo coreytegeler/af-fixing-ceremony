@@ -306,7 +306,8 @@ body.movement#iv .wrapper {
     font-size: 17px; }
     /* line 311, styles.scss */
     #credits section p {
-      line-height: 25px; }
-    /* line 314, styles.scss */
+      line-height: 25px;
+      max-width: 1200px; }
+    /* line 315, styles.scss */
     #credits section a {
       color: black; }
