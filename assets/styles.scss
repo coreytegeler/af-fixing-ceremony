@@ -8,7 +8,7 @@
 }
 
 @font-face {
-  font-family: "Blonde";
+  font-family: "Blonde Italic";
   src: url(/assets/italic/blonde_regular_italic-webfont.eot);
   src: url(/assets/italic/blonde_regular_italic-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/italic/blonde_regular_italic-webfont.woff) format("woff"), url(/assets/italic/blonde_regular_italic-webfont.ttf) format("truetype"), url(/assets/italic/blonde_regular_italic-webfont.svg#Blonde) format("svg");
   font-weight: normal;
@@ -149,6 +149,7 @@ body.movement {
 	}
 	&#i {
 		overflow: hidden;
+		background: black;
 	}
 	&#ii {
 		.grid {
@@ -205,6 +206,7 @@ body.movement {
 
 	&#iii {
 		overflow: hidden;
+		background: black;
 	}
 
 	&#iv {
@@ -303,14 +305,17 @@ body.movement {
 #credits {
 	display: table;
 	section {
+		width: calc(100% - 100px);
 		font-family: 'Blonde';
-		display: table-cell;
-		vertical-align: middle;
 		padding: 50px;
 		font-size: 17px;
+		em {
+			font-family: "Blonde Italic";
+		}
 		p {
 			line-height: 25px;
-			max-width: 1200px;
+			max-width: 800px;
+			// padding-right: 70px;
 		}
 		a {
 			color: black;
