@@ -1,62 +1,65 @@
 (function($){
   $(function(){
 	// localStorage.clear();
-	var visited = localStorage.getItem('visited');
-	visited = JSON.parse(visited);
-	if(visited == null) {
-		visited = {
-			'movement-i' : false,
-			'movement-ii' : false,
-			'movement-iii' : false,
-			'movement-iv' : false
-		}
+	var active = localStorage.getItem('active');
+	if(active == null) {
+		active = 0;
 	}
 
+	var video = $('video')[0];
+	$('.overlay').on('click', function() {
+		$(this).remove();
+		if(video) {
+			video.play();
+		}
+	});
 
-	$('video').on("ended", function() {
+	$(video).on('ended', function() {
 		setTimeout(function() {
+			completed(active);
 			window.location.href = '/affixing-ceremony/four-movements/';
 		}, 500);
 	});
 
-	if($('body').hasClass('movement')) {
-		var movement = 'movement-' + $('body').attr('id');
-		visited[movement] = true;
-		console.log(visited);
-		visited = JSON.stringify(visited);
-		localStorage.setItem('visited', visited);
-	}
-
 	if($('body').is('#four-movements')) {
-		console.log(visited);
-		var length = Object.keys(visited).length;
-		for(var i = 0; i < length; i++) {
-			var roman;
-			switch(i) {
-				case 0:
-					roman = 'i';
-					break;
-				case 1:
-					roman = 'ii';
-					break;
-				case 2:
-					roman = 'iii';
-					break;
-				case 3:
-					roman = 'iv';
-					break;
-			}
+		if(active != 4) {
+			var roman = romanify(active.toString());
 			var movement = 'movement-'+roman;
-			var visible = !visited[movement];
 			var item = $('.menu-item.'+roman);
-			if(visible) {
-				$(item).addClass('show');
-			}
-		}
+			$(item).addClass('active');
+		} else {
+			$('.positive').wrap('<a href="/affixing-ceremony/credits/"></a>');
 
+		}
+	} else if($('body').is('#ii')) {
+		$('.image').click(function() {
+			var totalCount = $('.image').length;
+			var clickedCount = $('.image.clicked').length;
+			if($(this).hasClass('zoom')) {
+				if(clickedCount == totalCount) {
+					window.location.href = '/affixing-ceremony/four-movements/';
+					return;
+				}
+				$(this).removeClass('zoom');
+			} else {
+				$(this).addClass('zoom').addClass('clicked');
+			}
+			if(clickedCount > 10) {
+				completed(active);
+			}
+		});
+	} else if($('body').is('#iv')) {
+		$('.name').each(function() {
+			var wild = Math.round(Math.random()) * 2 - 1
+			var shiftX = Math.floor((Math.random() * 10) + 1) * wild;
+			var shiftY = Math.floor((Math.random() * 10) + 1) * wild;
+			$(this).css({
+				'transform' : 'translateX('+shiftX+'%) translateY('+shiftY+'%)'
+			});
+		});
 	}
 
-
+	////////////////////////////////////////
     var $backstory = $('#backstory_topics');
 
     var $button = $('<div class="continue-button">')
@@ -74,6 +77,46 @@
   });
 })(jQuery);
 
+function completed(active) {
+	var id = $('body').attr('id');
+	var number = numbify(id);
+	active = number;
+	localStorage.setItem('active', active);	
+}
+
+function romanify(i) {
+	switch(i) {
+		case '0':
+			return 'i';
+			break;
+		case '1':
+			return 'ii';
+			break;
+		case '2':
+			return 'iii';
+			break;
+		case '3':
+			return 'iv';
+			break;
+	}
+}
+
+function numbify(roman) {
+	switch(roman) {
+		case 'i':
+			return 1;
+			break;
+		case 'ii':
+			return 2;
+			break;
+		case 'iii':
+			return 3;
+			break;
+		case 'iv':
+			return 4;
+			break;
+	}
+}
 
 
 // Based on function from http://stackoverflow.com/questions/5999118/add-or-update-query-string-parameter?foo

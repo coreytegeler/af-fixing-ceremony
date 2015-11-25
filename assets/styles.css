@@ -26,85 +26,229 @@ section {
   position: fixed;
   left: 20px;
   bottom: 20px;
-  background-image: url(/assets/images/plus.svg);
+  z-index: 200;
+  background-image: url(/affixing-ceremony/assets/images/plus.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
 
-/* line 31, styles.scss */
+/* line 32, styles.scss */
 body#start section.cyberspace .inner {
   width: 90%;
   height: 100%; }
-  /* line 35, styles.scss */
+  /* line 36, styles.scss */
   body#start section.cyberspace .inner .wrapper {
     width: 100%;
     height: auto; }
-    /* line 39, styles.scss */
+    /* line 40, styles.scss */
     body#start section.cyberspace .inner .wrapper img.text {
       cursor: pointer;
       width: 100%; }
 
-/* line 49, styles.scss */
+/* line 50, styles.scss */
 body#four-movements section.menu {
   position: relative;
   height: calc(100% - 120px);
   padding: 60px 0; }
-  /* line 53, styles.scss */
+  /* line 54, styles.scss */
   body#four-movements section.menu .title {
     position: absolute;
     width: auto;
     height: 40px;
     top: 20px;
     left: 20px; }
-  /* line 60, styles.scss */
+  /* line 61, styles.scss */
   body#four-movements section.menu .inner {
     width: 40%;
     height: 100%; }
-    /* line 64, styles.scss */
+    /* line 65, styles.scss */
     body#four-movements section.menu .inner .vert, body#four-movements section.menu body#start section.cyberspace .inner .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper {
       width: 100%;
       height: auto; }
-      /* line 67, styles.scss */
+      /* line 68, styles.scss */
       body#four-movements section.menu .inner .vert .wrapper, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper {
         display: table;
         position: relative; }
-        /* line 71, styles.scss */
+        /* line 72, styles.scss */
         body#four-movements section.menu .inner .vert .wrapper img.positive, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper img.positive, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper img.positive {
           width: 100%; }
-        /* line 74, styles.scss */
+        /* line 75, styles.scss */
         body#four-movements section.menu .inner .vert .wrapper .menu-item, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item {
           position: absolute;
-          display: none; }
-          /* line 77, styles.scss */
-          body#four-movements section.menu .inner .vert .wrapper .menu-item.show, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.show, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.show {
-            display: table; }
-          /* line 80, styles.scss */
+          display: none;
+          cursor: default; }
+          /* line 79, styles.scss */
+          body#four-movements section.menu .inner .vert .wrapper .menu-item.active, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.active, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.active {
+            display: block;
+            cursor: pointer; }
+          /* line 83, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item img, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item img, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item img {
             width: auto;
             height: 30px; }
-          /* line 84, styles.scss */
+          /* line 87, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.i, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.i, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.i {
             bottom: calc(100% + 10px);
             left: calc(50% - 55px); }
-          /* line 88, styles.scss */
+          /* line 91, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.ii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.ii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.ii {
             top: calc(50% - 30px);
             left: calc(100% + 10px); }
-          /* line 92, styles.scss */
+          /* line 95, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.iii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iii {
             top: calc(100% + 10px);
             left: calc(50% - 65px); }
-          /* line 96, styles.scss */
+          /* line 99, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.iv, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iv, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iv {
             top: calc(50% - 15px);
             right: calc(100% + 10px); }
 
-/* line 107, styles.scss */
+/* line 111, styles.scss */
+body.movement .overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: white;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer; }
+/* line 124, styles.scss */
 body.movement#i {
   background: black;
   overflow: hidden; }
-
-/* line 116, styles.scss */
+/* line 131, styles.scss */
+body.movement#ii .grid .image {
+  width: 25%;
+  height: 200px;
+  display: inline-table;
+  float: left;
+  background-color: white;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.5; }
+  /* line 141, styles.scss */
+  body.movement#ii .grid .image:hover {
+    cursor: zoom-in; }
+  /* line 144, styles.scss */
+  body.movement#ii .grid .image.clicked {
+    opacity: 1; }
+  /* line 147, styles.scss */
+  body.movement#ii .grid .image.zoom {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; }
+    /* line 154, styles.scss */
+    body.movement#ii .grid .image.zoom:hover {
+      cursor: zoom-out; }
+  @media screen and (max-width: 720px) {
+    /* line 131, styles.scss */
+    body.movement#ii .grid .image {
+      width: 33.33%; } }
+  @media screen and (max-width: 480px) {
+    /* line 131, styles.scss */
+    body.movement#ii .grid .image {
+      width: 50%; } }
+/* line 168, styles.scss */
 body.movement#iii {
   background: black;
   overflow: hidden; }
+/* line 174, styles.scss */
+body.movement#iv .wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  @media screen and (max-width: 720px) {
+    /* line 174, styles.scss */
+    body.movement#iv .wrapper {
+      overflow: auto; } }
+  /* line 181, styles.scss */
+  body.movement#iv .wrapper .essex {
+    width: auto;
+    height: 100%;
+    float: left;
+    background-color: white;
+    background-size: contain;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    position: relative; }
+    /* line 190, styles.scss */
+    body.movement#iv .wrapper .essex img {
+      opacity: 0;
+      width: auto;
+      height: 100%; }
+    /* line 195, styles.scss */
+    body.movement#iv .wrapper .essex .hidden {
+      position: absolute;
+      z-index: 200; }
+      /* line 198, styles.scss */
+      body.movement#iv .wrapper .essex .hidden:hover {
+        cursor: pointer; }
+      /* line 201, styles.scss */
+      body.movement#iv .wrapper .essex .hidden.mouth {
+        width: 14vh;
+        height: 10vh;
+        left: 30vh;
+        top: 59vh; }
+      /* line 207, styles.scss */
+      body.movement#iv .wrapper .essex .hidden.ear {
+        width: 10vh;
+        height: 14vh;
+        left: 9vh;
+        top: 39vh; }
+  /* line 216, styles.scss */
+  body.movement#iv .wrapper .names {
+    height: 100%;
+    padding: 0 100px;
+    display: block;
+    overflow: auto; }
+    @media screen and (max-width: 720px) {
+      /* line 216, styles.scss */
+      body.movement#iv .wrapper .names {
+        overflow: visible; } }
+    /* line 224, styles.scss */
+    body.movement#iv .wrapper .names .name {
+      min-width: 100px;
+      height: 30px;
+      width: auto;
+      display: block;
+      float: left;
+      margin: 20px 0;
+      cursor: pointer; }
+      /* line 232, styles.scss */
+      body.movement#iv .wrapper .names .name:nth-child(3n+1) {
+        width: 50%; }
+        /* line 234, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(3n+1) img {
+          float: left; }
+      /* line 238, styles.scss */
+      body.movement#iv .wrapper .names .name:nth-child(3n+2) {
+        width: 50%; }
+        /* line 240, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(3n+2) img {
+          float: right; }
+      /* line 244, styles.scss */
+      body.movement#iv .wrapper .names .name:nth-child(3n+3) {
+        width: 100%; }
+        /* line 246, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(3n+3) img {
+          display: table;
+          margin: auto; }
+      @media screen and (max-width: 1080px) {
+        /* line 224, styles.scss */
+        body.movement#iv .wrapper .names .name {
+          width: 100% !important; } }
+      @media screen and (max-width: 720px) {
+        /* line 224, styles.scss */
+        body.movement#iv .wrapper .names .name {
+          transform: none !important; } }
+      /* line 257, styles.scss */
+      body.movement#iv .wrapper .names .name img {
+        height: 100%;
+        display: table; }
