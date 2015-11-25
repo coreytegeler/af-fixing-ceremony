@@ -1,3 +1,21 @@
+@font-face {
+  font-family: "Blonde";
+  src: url(/assets/regular/blonde_regular-webfont.eot);
+  src: url(/assets/regular/blonde_regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/regular/blonde_regular-webfont.woff) format("woff"), url(/assets/regular/blonde_regular-webfont.ttf) format("truetype"), url(/assets/regular/blonde_regular-webfont.svg#Blonde) format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: "Blonde";
+  src: url(/assets/italic/blonde_regular_italic-webfont.eot);
+  src: url(/assets/italic/blonde_regular_italic-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/italic/blonde_regular_italic-webfont.woff) format("woff"), url(/assets/italic/blonde_regular_italic-webfont.ttf) format("truetype"), url(/assets/italic/blonde_regular_italic-webfont.svg#Blonde) format("svg");
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+}
+
 html, body {
 	width: 100%;
 	height: 100%;
@@ -22,7 +40,7 @@ section {
 	left: 20px;
 	bottom: 20px;
 	z-index: 200;
-	background-image: url(/day-without-art-2015/images/plus.svg);
+	background-image: url(/day-without-art-2015/assets/images/plus.svg);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -137,15 +155,25 @@ body.movement {
 			.image {
 				width: 25%;
 				height: 200px;
-				display: inline-table;
+				display: table;
 				float: left;
 				background-color: white;
-				background-size: 80%;
-				background-position: center;
-				background-repeat: no-repeat;
-				opacity: 0.2;
+				opacity: 0;
 				transition: opacity 200ms ease-in-out;
-				&:hover {
+				.center {
+					display: table-cell;
+					vertical-align: middle;
+					width: 100%;
+					height: auto;
+					img {
+						width: 100%;
+						height: auto;
+					}
+				}
+				&.loaded {
+					opacity: 0.2;
+				}
+				&.loaded:hover {
 					cursor: zoom-in;
 					opacity: 0.4;
 				}
@@ -162,6 +190,7 @@ body.movement {
 					z-index: 100;
 					&:hover {
 						cursor: zoom-out;
+						opacity: 1;
 					}
 				}
 				@media screen and (max-width: 720px) {
@@ -268,6 +297,22 @@ body.movement {
 					}
 				}
 			}
+		}
+	}
+}
+#credits {
+	display: table;
+	section {
+		font-family: 'Blonde';
+		display: table-cell;
+		vertical-align: middle;
+		padding: 50px;
+		font-size: 17px;
+		p {
+			line-height: 25px;
+		}
+		a {
+			color: black;
 		}
 	}
 }

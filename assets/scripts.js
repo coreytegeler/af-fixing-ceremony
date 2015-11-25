@@ -37,6 +37,14 @@ var active;
 
 		}
 	} else if($('body').is('#ii')) {
+
+		$('.grid .image').each(function() {
+			$(this).children('.center').imagesLoaded( function() {
+				var self = $(this)[0].elements;
+				var parent = $(self).parent('.image');
+				$(parent).addClass('loaded');
+			});
+		})
 		$('.image').click(function() {
 			var totalCount = $('.image').length;
 			var clickedCount = $('.image.clicked').length;
@@ -64,21 +72,12 @@ var active;
 		});
 	}
 
-	////////////////////////////////////////
-    var $wrapper = $('.body');
-
-    var $button = $('<div class="continue-button">')
-      .text('Continue to icaphila.org')
-      .click(function(){
-        var params = "day_with";
-        if (window.location.pathname != "/day-without-art-2015") {
-          window.location.replace(update_query(window.location.href, params))
-        } else {
-          window.location.href = window.location.origin
-        }
-      });
-
-    $wrapper.append($button);
+    var wrapper = $('#credits section');
+	var params = "day_with";
+    var url = update_query(window.location.origin, params);
+    var button = $('<a class="continue">').text('Continue to icaphila.org');
+    $(button).attr('href', url);
+    $(wrapper).append($(button));
   });
 
 	function completed() {
