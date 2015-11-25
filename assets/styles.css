@@ -27,7 +27,7 @@ section {
   left: 20px;
   bottom: 20px;
   z-index: 200;
-  background-image: url(images/plus.svg);
+  background-image: url(/day-without-art-2015/images/plus.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }

@@ -18,7 +18,7 @@ var active;
 	$(video).on('ended', function() {
 		setTimeout(function() {
 			completed(active);
-			window.location.href = '../four-movements/';
+			window.location.href = '/day-without-art-2015/four-movements/';
 		}, 500);
 	});
 
@@ -33,7 +33,7 @@ var active;
 			var item = $('.menu-item.'+roman);
 			$(item).addClass('active');
 		} else {
-			$('.positive').wrap('<a href="../credits/"></a>');
+			$('.positive').wrap('<a href="/day-without-art-2015/credits/"></a>');
 
 		}
 	} else if($('body').is('#ii')) {
@@ -42,7 +42,7 @@ var active;
 			var clickedCount = $('.image.clicked').length;
 			if($(this).hasClass('zoom')) {
 				if(clickedCount == totalCount) {
-					window.location.href = '../four-movements/';
+					window.location.href = '/day-without-art-2015/four-movements/';
 					return;
 				}
 				$(this).removeClass('zoom');
@@ -65,7 +65,7 @@ var active;
 	}
 
 	////////////////////////////////////////
-    var $backstory = $('#backstory_topics');
+    var $wrapper = $('.body');
 
     var $button = $('<div class="continue-button">')
       .text('Continue to icaphila.org')
@@ -78,7 +78,7 @@ var active;
         }
       });
 
-    $backstory.append($button);
+    $wrapper.append($button);
   });
 
 	function completed() {
