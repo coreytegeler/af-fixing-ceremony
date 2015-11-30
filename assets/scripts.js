@@ -70,8 +70,8 @@ var active;
 		// 		'transform' : 'translateX('+shiftX+'%) translateY('+shiftY+'%)'
 		// 	});
 		// });
-		$('.audio').click(function() {
-			var audio = $(this).children('audio')[0];
+		$('.play').click(function() {
+			var audio = $(this).siblings('audio')[0];
 			if(audio.paused) {
 				$('.audio').each(function() {
 					var otherAudio = $(this).children('audio')[0];
@@ -97,19 +97,11 @@ var active;
 			}
 		});
 
-		$('.overlay').click(function() {
-			$('.name').each(function() {
-				$(this).css({'display':'block'});
-				$(this).childen('.audio').css({'display':'table'});
-			});
-		});
 
 		$(window).on('resize', function() {
 			if($(this).innerWidth() <= 780) {
-				console.log('!');
 				$('.essex').insertAfter($('.names'));
 			} else {
-				console.log('!');
 				$('.essex').insertBefore($('.names'));
 				$('.wrapper').scrollTop(0);
 			}

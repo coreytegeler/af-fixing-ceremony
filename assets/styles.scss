@@ -238,6 +238,10 @@ body.movement {
 				.vital {
 					position: absolute;
 					z-index: 200;
+					.play {
+						width: 100%;
+						height: 100%;
+					}
 					&:hover {
 						cursor: pointer;
 					}
@@ -288,9 +292,9 @@ body.movement {
 					float: left;
 					margin: 20px 0;
 					position: relative;
-					.audio {
-						// width: auto;
-						height: 50px;
+					img {
+						height: 100%;
+						width: auto;
 						display: table;
 						cursor: pointer;
 						opacity: 0.4;
@@ -302,26 +306,22 @@ body.movement {
 							opacity: 1;
 						}
 					}
-					img {
-						height: 100%;
-						width: auto;
-					}
 					&:nth-child(1) {
 						width: 50%;
-						.audio {
+						img {
 							margin-left: 10%;
 						}
 					}
 					&:nth-child(2) {
 						width: 50%;
-						.audio {
+						img {
 							float: right;
 							margin-right: 10%;
 						}
 					}
 					&:nth-child(3) {
 						width: 100%;
-						.audio {
+						img {
 							margin: auto;
 						}
 					}
@@ -330,13 +330,13 @@ body.movement {
 					}
 					&:nth-child(5) {
 						width: 50%;
-						.audio {
+						img {
 							float: right;
 						}
 					}
 					&:nth-child(6) {
 						width: 100%;
-						.audio {
+						img {
 							margin: auto;
 						}
 					}
@@ -348,19 +348,19 @@ body.movement {
 					}
 					&:nth-child(9) {
 						width: 100%;
-						.audio {
+						img {
 							float: right;
 						}
 					}
 					&:nth-child(10) {
 						width: 100%;
-						.audio {
+						img {
 							margin-left: 25%;
 						}
 					}
 					&:nth-child(11) {
 						width: 100%;
-						.audio {
+						img {
 							float: right;
 							margin-right: 20%;
 						}
@@ -370,14 +370,14 @@ body.movement {
 					}
 					&:nth-child(13) {
 						width: 100%;
-						.audio {
+						img {
 							float: right;
 							margin-right: 15%;
 						}
 					}
 					&:nth-child(14) {
 						width: 100%;
-						.audio {
+						img {
 							margin-left: 10%;
 						}
 					}
@@ -386,7 +386,7 @@ body.movement {
 					}
 					&:nth-child(16) {
 						width: 50%;
-						.audio {
+						img {
 							float: right;
 							margin-right: 25%;
 						}
