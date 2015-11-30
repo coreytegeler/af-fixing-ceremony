@@ -102,7 +102,9 @@ var active;
 			if($(this).innerWidth() <= 780) {
 				$('.essex').insertAfter($('.names'));
 			} else {
-				$('.essex').insertBefore($('.names'));
+				if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+					$('.essex').insertBefore($('.names'));
+				}
 				$('.wrapper').scrollTop(0);
 			}
 		}).resize();
