@@ -79,8 +79,11 @@ var active;
 						otherAudio.pause();
 					}
 				});
+				$(this).addClass('playing clicked');
+
 				audio.play();
 			} else {
+				$(this).removeClass('playing');
 				audio.pause();
 			}
 		});
@@ -90,13 +93,23 @@ var active;
 			audio.onended = function() {
 				audio.currentTime = 0;
 				audio.pause();
+				$(this).removeClass('playing');
 			}
+		});
+
+		$('.overlay').click(function() {
+			$('.name').each(function() {
+				$(this).css({'display':'block'});
+				$(this).childen('.audio').css({'display':'table'});
+			});
 		});
 
 		$(window).on('resize', function() {
 			if($(this).innerWidth() <= 780) {
+				console.log('!');
 				$('.essex').insertAfter($('.names'));
 			} else {
+				console.log('!');
 				$('.essex').insertBefore($('.names'));
 				$('.wrapper').scrollTop(0);
 			}
