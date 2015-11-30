@@ -277,7 +277,7 @@ body.movement#iv .wrapper {
       width: auto;
       display: block;
       float: left;
-      margin: 10px 0;
+      margin: 20px 0;
       cursor: pointer; }
       /* line 288, styles.scss */
       body.movement#iv .wrapper .names .name img {
@@ -391,17 +391,17 @@ body.movement#iv .wrapper {
   display: table; }
   /* line 400, styles.scss */
   #credits section {
+    max-width: 800px;
     width: calc(100% - 100px);
     font-family: 'Blonde';
     padding: 50px;
     font-size: 17px; }
-    /* line 405, styles.scss */
+    /* line 406, styles.scss */
     #credits section em {
       font-family: "Blonde Italic"; }
-    /* line 408, styles.scss */
+    /* line 409, styles.scss */
     #credits section p {
-      line-height: 25px;
-      max-width: 800px; }
-    /* line 413, styles.scss */
+      line-height: 25px; }
+    /* line 412, styles.scss */
     #credits section a {
       color: black; }

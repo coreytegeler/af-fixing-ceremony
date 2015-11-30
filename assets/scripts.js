@@ -9,7 +9,7 @@ var active;
 
 	var video = $('video')[0];
 	$('.overlay').on('click', function() {
-		$(this).remove();
+		$(this).css({display:'none'});
 		if(video) {
 			video.play();
 		}

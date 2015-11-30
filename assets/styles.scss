@@ -283,7 +283,7 @@ body.movement {
 					width: auto;
 					display: block;
 					float: left;
-					margin: 10px 0;
+					margin: 20px 0;
 					cursor: pointer;
 					img {
 						height: 100%;
@@ -398,6 +398,7 @@ body.movement {
 #credits {
 	display: table;
 	section {
+		max-width: 800px;
 		width: calc(100% - 100px);
 		font-family: 'Blonde';
 		padding: 50px;
@@ -407,8 +408,6 @@ body.movement {
 		}
 		p {
 			line-height: 25px;
-			max-width: 800px;
-			// padding-right: 70px;
 		}
 		a {
 			color: black;
