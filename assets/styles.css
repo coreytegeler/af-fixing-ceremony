@@ -16,24 +16,25 @@
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0; }
+  margin: 0;
+  -webkit-overflow-scrolling: touch; }
 
-/* line 26, styles.scss */
+/* line 27, styles.scss */
 .horz, body#start section.cyberspace .inner, body#four-movements section.menu .inner, body#four-movements section.menu .inner .vert .wrapper, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper {
   display: table;
   margin: auto; }
 
-/* line 30, styles.scss */
+/* line 31, styles.scss */
 .vert, body#start section.cyberspace .inner .wrapper {
   display: table-cell;
   vertical-align: middle; }
 
-/* line 34, styles.scss */
+/* line 35, styles.scss */
 section {
   width: 100%;
   height: 100%; }
 
-/* line 38, styles.scss */
+/* line 39, styles.scss */
 .return {
   width: 40px;
   height: 40px;
@@ -46,47 +47,47 @@ section {
   background-position: center;
   background-repeat: no-repeat; }
 
-/* line 52, styles.scss */
+/* line 53, styles.scss */
 body#start section.cyberspace .inner {
   width: 90%;
   height: 100%; }
-  /* line 56, styles.scss */
+  /* line 57, styles.scss */
   body#start section.cyberspace .inner .wrapper {
     width: 100%;
     height: auto; }
-    /* line 60, styles.scss */
+    /* line 61, styles.scss */
     body#start section.cyberspace .inner .wrapper img.text {
       cursor: pointer;
       width: 100%; }
 
-/* line 70, styles.scss */
+/* line 71, styles.scss */
 body#four-movements section.menu {
   position: relative;
   height: calc(100% - 120px);
   padding: 60px 0; }
-  /* line 74, styles.scss */
+  /* line 75, styles.scss */
   body#four-movements section.menu .title {
     position: absolute;
     width: auto;
     height: 40px;
     top: 20px;
     left: 20px; }
-  /* line 81, styles.scss */
+  /* line 82, styles.scss */
   body#four-movements section.menu .inner {
     width: 40%;
     height: 100%; }
-    /* line 85, styles.scss */
+    /* line 86, styles.scss */
     body#four-movements section.menu .inner .vert, body#four-movements section.menu body#start section.cyberspace .inner .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper {
       width: 100%;
       height: auto; }
-      /* line 88, styles.scss */
+      /* line 89, styles.scss */
       body#four-movements section.menu .inner .vert .wrapper, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper {
         display: table;
         position: relative; }
-        /* line 92, styles.scss */
+        /* line 93, styles.scss */
         body#four-movements section.menu .inner .vert .wrapper img.positive, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper img.positive, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper img.positive {
           width: 100%; }
-        /* line 95, styles.scss */
+        /* line 96, styles.scss */
         body#four-movements section.menu .inner .vert .wrapper .menu-item, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item {
           position: absolute;
           display: none;
@@ -94,55 +95,55 @@ body#four-movements section.menu {
           background-color: #000;
           -webkit-transition: background-color 100ms ease;
                   transition: background-color 100ms ease; }
-          /* line 101, styles.scss */
+          /* line 102, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item:hover, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item:hover, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item:hover {
             background-color: #b2080e;
             display: table;
             cursor: pointer; }
-          /* line 106, styles.scss */
+          /* line 107, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.active, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.active, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.active {
             display: block; }
-          /* line 109, styles.scss */
+          /* line 110, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item img, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item img, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item img {
             width: auto;
             height: 30px;
             mix-blend-mode: screen;
             vertical-align: bottom; }
-          /* line 115, styles.scss */
+          /* line 116, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.i, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.i, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.i {
             bottom: calc(100% + 10px);
             left: calc(50% - 55px); }
-          /* line 119, styles.scss */
+          /* line 120, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.ii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.ii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.ii {
             top: calc(50% - 30px);
             left: calc(100% + 10px); }
-          /* line 123, styles.scss */
+          /* line 124, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.iii, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iii, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iii {
             top: calc(100% + 10px);
             left: calc(50% - 65px); }
-          /* line 127, styles.scss */
+          /* line 128, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item.iv, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item.iv, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item.iv {
             top: calc(50% - 15px);
             right: calc(100% + 10px); }
 
-/* line 139, styles.scss */
+/* line 140, styles.scss */
 body.movement .overlay {
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100;
+  z-index: 300;
   background-color: white;
   background-size: 80%;
   background-position: center;
   background-repeat: no-repeat;
   cursor: pointer; }
-/* line 152, styles.scss */
+/* line 153, styles.scss */
 body.movement#i {
   overflow: hidden;
   background: black; }
-/* line 158, styles.scss */
+/* line 159, styles.scss */
 body.movement#ii .grid .image {
   width: 25%;
   height: 200px;
@@ -152,28 +153,28 @@ body.movement#ii .grid .image {
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
           transition: opacity 300ms ease-in-out; }
-  /* line 166, styles.scss */
+  /* line 167, styles.scss */
   body.movement#ii .grid .image .center {
     display: table-cell;
     vertical-align: middle;
     width: 100%;
     height: auto; }
-    /* line 171, styles.scss */
+    /* line 172, styles.scss */
     body.movement#ii .grid .image .center img {
       width: 100%;
       height: auto; }
-  /* line 176, styles.scss */
+  /* line 177, styles.scss */
   body.movement#ii .grid .image.loaded {
     opacity: 0.4; }
-  /* line 179, styles.scss */
+  /* line 180, styles.scss */
   body.movement#ii .grid .image.loaded:not(.clicked):hover {
     cursor: -webkit-zoom-in;
     cursor: zoom-in;
     opacity: 1; }
-  /* line 183, styles.scss */
+  /* line 184, styles.scss */
   body.movement#ii .grid .image.clicked {
     opacity: 1; }
-  /* line 186, styles.scss */
+  /* line 187, styles.scss */
   body.movement#ii .grid .image.zoom {
     -webkit-transition: opacity 0ms ease-in-out;
             transition: opacity 0ms ease-in-out;
@@ -183,34 +184,39 @@ body.movement#ii .grid .image {
     top: 0;
     left: 0;
     z-index: 100; }
-    /* line 194, styles.scss */
+    /* line 195, styles.scss */
     body.movement#ii .grid .image.zoom:hover {
       cursor: -webkit-zoom-out;
       cursor: zoom-out;
       opacity: 1; }
   @media screen and (max-width: 720px) {
-    /* line 158, styles.scss */
+    /* line 159, styles.scss */
     body.movement#ii .grid .image {
       width: 33.33%; } }
   @media screen and (max-width: 480px) {
-    /* line 158, styles.scss */
+    /* line 159, styles.scss */
     body.movement#ii .grid .image {
       width: 50%; } }
-/* line 209, styles.scss */
+/* line 210, styles.scss */
 body.movement#iii {
   overflow: hidden;
   background: black; }
 /* line 215, styles.scss */
+body.movement#iv .overlay .play {
+  width: 100%;
+  height: 100%; }
+/* line 219, styles.scss */
 body.movement#iv .wrapper {
   width: 100%;
   height: 100%;
   min-height: 480px;
   overflow: hidden; }
   @media screen and (max-width: 780px) {
-    /* line 215, styles.scss */
+    /* line 219, styles.scss */
     body.movement#iv .wrapper {
-      overflow: auto; } }
-  /* line 223, styles.scss */
+      overflow: auto;
+      -webkit-overflow-scrolling: touch; } }
+  /* line 228, styles.scss */
   body.movement#iv .wrapper .essex {
     width: auto;
     height: 100%;
@@ -221,61 +227,62 @@ body.movement#iv .wrapper {
     background-repeat: no-repeat;
     position: relative;
     vertical-align: bottom; }
-    /* line 233, styles.scss */
+    /* line 238, styles.scss */
     body.movement#iv .wrapper .essex img {
       opacity: 0;
       width: auto;
       height: 100%; }
-    /* line 238, styles.scss */
+    /* line 243, styles.scss */
     body.movement#iv .wrapper .essex .vital {
       position: absolute;
       z-index: 200; }
-      /* line 241, styles.scss */
+      /* line 246, styles.scss */
       body.movement#iv .wrapper .essex .vital .play {
         width: 100%;
         height: 100%; }
-      /* line 245, styles.scss */
+      /* line 250, styles.scss */
       body.movement#iv .wrapper .essex .vital:hover {
         cursor: pointer; }
-      /* line 248, styles.scss */
+      /* line 253, styles.scss */
       body.movement#iv .wrapper .essex .vital.mouth {
         width: 14vh;
         height: 10vh;
         left: 30vh;
         top: 59vh; }
-      /* line 254, styles.scss */
+      /* line 259, styles.scss */
       body.movement#iv .wrapper .essex .vital.ear {
         width: 10vh;
         height: 14vh;
         left: 9vh;
         top: 39vh; }
-      /* line 260, styles.scss */
+      /* line 265, styles.scss */
       body.movement#iv .wrapper .essex .vital.eye-1 {
         width: 10vh;
         height: 6vh;
         left: 25vh;
         top: 41vh; }
-      /* line 266, styles.scss */
+      /* line 271, styles.scss */
       body.movement#iv .wrapper .essex .vital.eye-2 {
         width: 8vh;
         height: 6vh;
         left: 42vh;
         top: 42vh; }
-  /* line 275, styles.scss */
+  /* line 280, styles.scss */
   body.movement#iv .wrapper .names {
     max-width: 1280px;
     height: 100%;
     padding: 0 30px 100px 0;
     display: block;
     overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
     overflow-x: hidden;
     position: relative; }
     @media screen and (max-width: 780px) {
-      /* line 275, styles.scss */
+      /* line 280, styles.scss */
       body.movement#iv .wrapper .names {
         height: auto;
         overflow: visible; } }
-    /* line 287, styles.scss */
+    /* line 293, styles.scss */
     body.movement#iv .wrapper .names .name {
       min-width: 100px;
       height: 50px;
@@ -284,7 +291,7 @@ body.movement#iv .wrapper {
       float: left;
       margin: 20px 0;
       position: relative; }
-      /* line 295, styles.scss */
+      /* line 301, styles.scss */
       body.movement#iv .wrapper .names .name img {
         height: 100%;
         width: auto;
@@ -293,131 +300,141 @@ body.movement#iv .wrapper {
         opacity: 0.4;
         -webkit-transition: opacity 300ms ease-in-out;
                 transition: opacity 300ms ease-in-out; }
-        /* line 302, styles.scss */
+        /* line 308, styles.scss */
         body.movement#iv .wrapper .names .name img:hover, body.movement#iv .wrapper .names .name img .playing {
           opacity: 1; }
-        /* line 305, styles.scss */
+        /* line 311, styles.scss */
         body.movement#iv .wrapper .names .name img.clicked {
           opacity: 1; }
-      /* line 309, styles.scss */
+      /* line 315, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(1) {
         width: 50%; }
-        /* line 311, styles.scss */
+        /* line 317, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(1) img {
           margin-left: 10%; }
-      /* line 315, styles.scss */
+      /* line 321, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(2) {
         width: 50%; }
-        /* line 317, styles.scss */
+        /* line 323, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(2) img {
           float: right;
           margin-right: 10%; }
-      /* line 322, styles.scss */
+      /* line 328, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(3) {
         width: 100%; }
-        /* line 324, styles.scss */
+        /* line 330, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(3) img {
           margin: auto; }
-      /* line 328, styles.scss */
+      /* line 334, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(4) {
         width: 50%; }
-      /* line 331, styles.scss */
+      /* line 337, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(5) {
         width: 50%; }
-        /* line 333, styles.scss */
+        /* line 339, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(5) img {
           float: right; }
-      /* line 337, styles.scss */
+      /* line 343, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(6) {
         width: 100%; }
-        /* line 339, styles.scss */
+        /* line 345, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(6) img {
           margin: auto; }
-      /* line 343, styles.scss */
+      /* line 349, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(7) {
         width: 50%; }
-      /* line 346, styles.scss */
+      /* line 352, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(8) {
         width: 50%; }
-      /* line 349, styles.scss */
+      /* line 355, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(9) {
         width: 100%; }
-        /* line 351, styles.scss */
+        /* line 357, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(9) img {
           float: right; }
-      /* line 355, styles.scss */
+      /* line 361, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(10) {
         width: 100%; }
-        /* line 357, styles.scss */
+        /* line 363, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(10) img {
           margin-left: 25%; }
-      /* line 361, styles.scss */
+      /* line 367, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(11) {
         width: 100%; }
-        /* line 363, styles.scss */
+        /* line 369, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(11) img {
           float: right;
           margin-right: 20%; }
-      /* line 368, styles.scss */
+      /* line 374, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(12) {
         width: 100%; }
-      /* line 371, styles.scss */
+      /* line 377, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(13) {
         width: 100%; }
-        /* line 373, styles.scss */
+        /* line 379, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(13) img {
           float: right;
           margin-right: 15%; }
-      /* line 378, styles.scss */
+      /* line 384, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(14) {
         width: 100%; }
-        /* line 380, styles.scss */
+        /* line 386, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(14) img {
           margin-left: 10%; }
-      /* line 384, styles.scss */
+      /* line 390, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(15) {
         width: 50%; }
-      /* line 387, styles.scss */
+      /* line 393, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(16) {
         width: 50%; }
-        /* line 389, styles.scss */
+        /* line 395, styles.scss */
         body.movement#iv .wrapper .names .name:nth-child(16) img {
           float: right;
           margin-right: 25%; }
       @media screen and (max-width: 1050px) {
-        /* line 287, styles.scss */
+        /* line 293, styles.scss */
         body.movement#iv .wrapper .names .name {
           width: 100% !important; }
-          /* line 396, styles.scss */
-          body.movement#iv .wrapper .names .name .audio {
+          /* line 402, styles.scss */
+          body.movement#iv .wrapper .names .name img {
             margin: auto !important;
             float: none !important; } }
-    /* line 402, styles.scss */
+    /* line 408, styles.scss */
     body.movement#iv .wrapper .names .credit {
       padding-top: 60px;
       width: 100%;
       display: table; }
-      /* line 406, styles.scss */
+      /* line 412, styles.scss */
       body.movement#iv .wrapper .names .credit img {
         float: right;
         height: 70px; }
 
-/* line 415, styles.scss */
+/* line 422, styles.scss */
+.mobile#iv .wrapper {
+  overflow: auto !important;
+  -webkit-overflow-scrolling: touch !important; }
+  /* line 425, styles.scss */
+  .mobile#iv .wrapper .names {
+    margin-top: 100px;
+    height: auto !important;
+    overflow: visible !important; }
+
+/* line 432, styles.scss */
 #credits {
   display: table; }
-  /* line 417, styles.scss */
+  /* line 434, styles.scss */
   #credits section {
     max-width: 800px;
     width: calc(100% - 100px);
     font-family: 'Blonde';
     padding: 50px;
     font-size: 17px; }
-    /* line 423, styles.scss */
+    /* line 440, styles.scss */
     #credits section em {
       font-family: "Blonde Italic"; }
-    /* line 426, styles.scss */
+    /* line 443, styles.scss */
     #credits section p {
       line-height: 25px; }
-    /* line 429, styles.scss */
+    /* line 446, styles.scss */
     #credits section a {
       color: black; }

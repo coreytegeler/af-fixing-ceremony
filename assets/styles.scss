@@ -22,6 +22,7 @@ html, body {
 	width: 100%;
 	height: 100%;
 	margin: 0;
+	-webkit-overflow-scrolling: touch;
 }
 .horz {
 	display: table;
@@ -142,7 +143,7 @@ body.movement {
 		position: fixed;
 		top: 0;
 		left: 0;
-		z-index: 100;
+		z-index: 300;
 		background-color: white;
 		background-size: 80%;
 		background-position: center;
@@ -210,8 +211,11 @@ body.movement {
 		overflow: hidden;
 		background: black;
 	}
-
 	&#iv {
+		.overlay .play {
+			width: 100%;
+			height: 100%;
+		}
 		.wrapper {
 			width: 100%;
 			height: 100%;
@@ -219,6 +223,7 @@ body.movement {
 			overflow: hidden;
 			@media screen and (max-width: 780px) {
 				overflow: auto;
+				-webkit-overflow-scrolling: touch;
 			}
 			.essex {
 				width: auto;
@@ -278,6 +283,7 @@ body.movement {
 				padding: 0 30px 100px 0;
 				display: block;
 				overflow-y: auto;
+				-webkit-overflow-scrolling: touch;
 				overflow-x: hidden;
 				position: relative;
 				@media screen and (max-width: 780px) {
@@ -393,7 +399,7 @@ body.movement {
 					}
 					@media screen and (max-width: 1050px) {
 				    	width: 100% !important;
-				    	.audio {
+				    	img {
 				    		margin: auto !important;
 				    		float: none !important;
 				    	}
@@ -409,6 +415,17 @@ body.movement {
 					}
 				}
 			}
+		}
+	}
+}
+.mobile#iv {
+	.wrapper {
+		overflow: auto !important;
+		-webkit-overflow-scrolling: touch !important;
+		.names {
+			margin-top: 100px;
+			height: auto !important;
+			overflow: visible !important;
 		}
 	}
 }

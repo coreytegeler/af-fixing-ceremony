@@ -107,6 +107,10 @@ var active;
 			}
 		}).resize();
 
+		if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			$('body').addClass('mobile');
+			$('.essex').insertAfter($('.names'));
+		}
 	}
 
     var wrapper = $('#credits section');
