@@ -277,131 +277,135 @@ body.movement#iv .wrapper {
       width: auto;
       display: block;
       float: left;
-      margin: 20px 0;
-      cursor: pointer; }
-      /* line 288, styles.scss */
+      margin: 20px 0; }
+      /* line 287, styles.scss */
+      body.movement#iv .wrapper .names .name .audio {
+        display: table;
+        height: 50px;
+        cursor: pointer; }
+      /* line 292, styles.scss */
       body.movement#iv .wrapper .names .name img {
         height: 100%;
         display: table; }
-      /* line 292, styles.scss */
+      /* line 296, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(1) {
         width: 50%; }
-        /* line 294, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(1) img {
+        /* line 298, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(1) .audio {
           margin-left: 10%; }
-      /* line 298, styles.scss */
+      /* line 302, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(2) {
         width: 50%; }
-        /* line 300, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(2) img {
+        /* line 304, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(2) .audio {
           float: right;
           margin-right: 10%; }
-      /* line 305, styles.scss */
+      /* line 309, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(3) {
         width: 100%; }
-        /* line 307, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(3) img {
+        /* line 311, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(3) .audio {
           margin: auto; }
-      /* line 311, styles.scss */
+      /* line 315, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(4) {
         width: 50%; }
-      /* line 314, styles.scss */
+      /* line 318, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(5) {
         width: 50%; }
-        /* line 316, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(5) img {
+        /* line 320, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(5) .audio {
           float: right; }
-      /* line 320, styles.scss */
+      /* line 324, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(6) {
         width: 100%; }
-        /* line 322, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(6) img {
+        /* line 326, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(6) .audio {
           margin: auto; }
-      /* line 326, styles.scss */
+      /* line 330, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(7) {
         width: 50%; }
-      /* line 329, styles.scss */
+      /* line 333, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(8) {
         width: 50%; }
-      /* line 332, styles.scss */
+      /* line 336, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(9) {
         width: 100%; }
-        /* line 334, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(9) img {
+        /* line 338, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(9) .audio {
           float: right; }
-      /* line 338, styles.scss */
+      /* line 342, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(10) {
         width: 100%; }
-        /* line 340, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(10) img {
+        /* line 344, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(10) .audio {
           margin-left: 25%; }
-      /* line 344, styles.scss */
+      /* line 348, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(11) {
         width: 100%; }
-        /* line 346, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(11) img {
+        /* line 350, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(11) .audio {
           float: right;
           margin-right: 20%; }
-      /* line 351, styles.scss */
+      /* line 355, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(12) {
         width: 100%; }
-      /* line 354, styles.scss */
+      /* line 358, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(13) {
         width: 100%; }
-        /* line 356, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(13) img {
+        /* line 360, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(13) .audio {
           float: right;
           margin-right: 15%; }
-      /* line 361, styles.scss */
+      /* line 365, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(14) {
         width: 100%; }
-        /* line 363, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(14) img {
+        /* line 367, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(14) .audio {
           margin-left: 10%; }
-      /* line 367, styles.scss */
+      /* line 371, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(15) {
         width: 50%; }
-      /* line 370, styles.scss */
+      /* line 374, styles.scss */
       body.movement#iv .wrapper .names .name:nth-child(16) {
         width: 50%; }
-        /* line 372, styles.scss */
-        body.movement#iv .wrapper .names .name:nth-child(16) img {
+        /* line 376, styles.scss */
+        body.movement#iv .wrapper .names .name:nth-child(16) .audio {
           float: right;
           margin-right: 25%; }
       @media screen and (max-width: 1050px) {
         /* line 280, styles.scss */
         body.movement#iv .wrapper .names .name {
           width: 100% !important; }
-          /* line 379, styles.scss */
-          body.movement#iv .wrapper .names .name img {
+          /* line 383, styles.scss */
+          body.movement#iv .wrapper .names .name .audio {
             margin: auto !important;
             float: none !important; } }
-    /* line 385, styles.scss */
+    /* line 389, styles.scss */
     body.movement#iv .wrapper .names .credit {
       padding-top: 60px;
       width: 100%;
       display: table; }
-      /* line 389, styles.scss */
+      /* line 393, styles.scss */
       body.movement#iv .wrapper .names .credit img {
         float: right;
         height: 70px; }
 
-/* line 398, styles.scss */
+/* line 402, styles.scss */
 #credits {
   display: table; }
-  /* line 400, styles.scss */
+  /* line 404, styles.scss */
   #credits section {
     max-width: 800px;
     width: calc(100% - 100px);
     font-family: 'Blonde';
     padding: 50px;
     font-size: 17px; }
-    /* line 406, styles.scss */
+    /* line 410, styles.scss */
     #credits section em {
       font-family: "Blonde Italic"; }
-    /* line 409, styles.scss */
+    /* line 413, styles.scss */
     #credits section p {
       line-height: 25px; }
-    /* line 412, styles.scss */
+    /* line 416, styles.scss */
     #credits section a {
       color: black; }

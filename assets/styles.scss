@@ -284,27 +284,31 @@ body.movement {
 					display: block;
 					float: left;
 					margin: 20px 0;
-					cursor: pointer;
+					.audio {
+						display: table;
+						height: 50px;
+						cursor: pointer;
+					}
 					img {
 						height: 100%;
 						display: table;
 					}
 					&:nth-child(1) {
 						width: 50%;
-						img {
+						.audio {
 							margin-left: 10%;
 						}
 					}
 					&:nth-child(2) {
 						width: 50%;
-						img {
+						.audio {
 							float: right;
 							margin-right: 10%;
 						}
 					}
 					&:nth-child(3) {
 						width: 100%;
-						img {
+						.audio {
 							margin: auto;
 						}
 					}
@@ -313,13 +317,13 @@ body.movement {
 					}
 					&:nth-child(5) {
 						width: 50%;
-						img {
+						.audio {
 							float: right;
 						}
 					}
 					&:nth-child(6) {
 						width: 100%;
-						img {
+						.audio {
 							margin: auto;
 						}
 					}
@@ -331,19 +335,19 @@ body.movement {
 					}
 					&:nth-child(9) {
 						width: 100%;
-						img {
+						.audio {
 							float: right;
 						}
 					}
 					&:nth-child(10) {
 						width: 100%;
-						img {
+						.audio {
 							margin-left: 25%;
 						}
 					}
 					&:nth-child(11) {
 						width: 100%;
-						img {
+						.audio {
 							float: right;
 							margin-right: 20%;
 						}
@@ -353,14 +357,14 @@ body.movement {
 					}
 					&:nth-child(13) {
 						width: 100%;
-						img {
+						.audio {
 							float: right;
 							margin-right: 15%;
 						}
 					}
 					&:nth-child(14) {
 						width: 100%;
-						img {
+						.audio {
 							margin-left: 10%;
 						}
 					}
@@ -369,14 +373,14 @@ body.movement {
 					}
 					&:nth-child(16) {
 						width: 50%;
-						img {
+						.audio {
 							float: right;
 							margin-right: 25%;
 						}
 					}
 					@media screen and (max-width: 1050px) {
 				    	width: 100% !important;
-				    	img {
+				    	.audio {
 				    		margin: auto !important;
 				    		float: none !important;
 				    	}
