@@ -98,6 +98,7 @@ var active;
 				$('.essex').insertAfter($('.names'));
 			} else {
 				$('.essex').insertBefore($('.names'));
+				$('.wrapper').scrollTop(0);
 			}
 		}).resize();
 
