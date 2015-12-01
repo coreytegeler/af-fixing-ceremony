@@ -26,6 +26,9 @@ html, body {
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
 }
+.dark {
+	background-color: black;
+}
 .horz {
 	display: table;
 	margin: auto;
@@ -160,7 +163,6 @@ body.movement {
 	}
 	&#i {
 		overflow: hidden;
-		background: black;
 	}
 	&#ii {
 		.grid {
@@ -217,7 +219,6 @@ body.movement {
 
 	&#iii {
 		overflow: hidden;
-		background: black;
 	}
 	&#iv {
 		.overlay .play {

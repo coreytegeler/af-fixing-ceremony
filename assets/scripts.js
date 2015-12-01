@@ -12,6 +12,7 @@ var active;
 		$(this).css({display:'none'});
 		if(video) {
 			video.play();
+			$('body').addClass('dark');
 		}
 	});
 
@@ -44,7 +45,7 @@ var active;
 				var parent = $(self).parent('.image');
 				$(parent).addClass('loaded');
 			});
-		})
+		});
 		$('.image').click(function() {
 			var totalCount = $('.image').length;
 			var clickedCount = $('.image.clicked').length;
@@ -61,6 +62,7 @@ var active;
 				completed();
 			}
 		});
+
 	} else if($('body').is('#iv')) {
 		// $('.name').each(function() {
 		// 	var wild = Math.round(Math.random()) * 2 - 1
