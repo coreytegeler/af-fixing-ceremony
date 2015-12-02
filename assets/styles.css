@@ -48,7 +48,7 @@ section {
   left: 20px;
   bottom: 20px;
   z-index: 200;
-  background-image: url(/day-without-art-2015/assets/images/plus.svg);
+  background-image: url(http://f.icaphila.org/day-without-art-2015/images/plus.svg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -104,8 +104,7 @@ body#four-movements section.menu {
           display: none;
           cursor: default;
           background-color: #000;
-          -webkit-transition: background-color 100ms ease;
-                  transition: background-color 100ms ease; }
+          transition: background-color 100ms ease; }
           /* line 113, styles.scss */
           body#four-movements section.menu .inner .vert .wrapper .menu-item:hover, body#four-movements section.menu body#start section.cyberspace .inner .wrapper .wrapper .menu-item:hover, body#start section.cyberspace body#four-movements section.menu .inner .wrapper .wrapper .menu-item:hover {
             background-color: #b2080e;
@@ -161,8 +160,7 @@ body.movement#ii .grid .image {
   float: left;
   background-color: white;
   opacity: 0;
-  -webkit-transition: opacity 300ms ease-in-out;
-          transition: opacity 300ms ease-in-out; }
+  transition: opacity 300ms ease-in-out; }
   /* line 177, styles.scss */
   body.movement#ii .grid .image .center {
     display: table-cell;
@@ -178,7 +176,6 @@ body.movement#ii .grid .image {
     opacity: 0.4; }
   /* line 190, styles.scss */
   body.movement#ii .grid .image.loaded:not(.clicked):hover {
-    cursor: -webkit-zoom-in;
     cursor: zoom-in;
     opacity: 1; }
   /* line 194, styles.scss */
@@ -186,8 +183,7 @@ body.movement#ii .grid .image {
     opacity: 1; }
   /* line 197, styles.scss */
   body.movement#ii .grid .image.zoom {
-    -webkit-transition: opacity 0ms ease-in-out;
-            transition: opacity 0ms ease-in-out;
+    transition: opacity 0ms ease-in-out;
     width: 100%;
     height: 100%;
     position: fixed;
@@ -196,7 +192,6 @@ body.movement#ii .grid .image {
     z-index: 100; }
     /* line 205, styles.scss */
     body.movement#ii .grid .image.zoom:hover {
-      cursor: -webkit-zoom-out;
       cursor: zoom-out;
       opacity: 1; }
   @media screen and (max-width: 720px) {
@@ -307,8 +302,7 @@ body.movement#iv .wrapper {
         display: table;
         cursor: pointer;
         opacity: 0.4;
-        -webkit-transition: opacity 300ms ease-in-out;
-                transition: opacity 300ms ease-in-out; }
+        transition: opacity 300ms ease-in-out; }
         /* line 317, styles.scss */
         body.movement#iv .wrapper .names .name img:hover, body.movement#iv .wrapper .names .name img .playing {
           opacity: 1; }
