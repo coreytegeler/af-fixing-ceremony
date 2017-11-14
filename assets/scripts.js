@@ -19,7 +19,7 @@ var active;
 	$(video).on('ended', function() {
 		setTimeout(function() {
 			completed(active);
-			window.location.href = '/day-without-art-2015/four-movements/';
+			window.location.href = '/affixing-ceremony/four-movements/';
 		}, 500);
 	});
 
@@ -34,7 +34,7 @@ var active;
 			var item = $('.menu-item.'+roman);
 			$(item).addClass('active');
 		} else {
-			$('.positive').wrap('<a href="/day-without-art-2015/credits/"></a>');
+			$('.positive').wrap('<a href="/affixing-ceremony/credits/"></a>');
 
 		}
 	} else if($('body').is('#ii')) {
@@ -51,7 +51,7 @@ var active;
 			var clickedCount = $('.image.clicked').length;
 			if($(this).hasClass('zoom')) {
 				if(clickedCount == totalCount) {
-					window.location.href = '/day-without-art-2015/four-movements/';
+					window.location.href = '/affixing-ceremony/four-movements/';
 					return;
 				}
 				$(this).removeClass('zoom');
